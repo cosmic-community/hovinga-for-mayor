@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #0A1628;
+    background-color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
+
+@layer utilities {
+  .section-pad {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: 768px) {
+    .section-pad {
+      padding-top: 80px;
+      padding-bottom: 80px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .section-pad {
+      padding-top: 120px;
+      padding-bottom: 120px;
+    }
+  }
+
+  .h1-size {
+    font-size: 36px;
+    line-height: 1.1;
+    font-weight: 800;
+  }
+
+  @media (min-width: 768px) {
+    .h1-size {
+      font-size: 48px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .h1-size {
+      font-size: 80px;
+    }
+  }
+
+  .h2-size {
+    font-size: 28px;
+    line-height: 1.15;
+    font-weight: 800;
+  }
+
+  @media (min-width: 768px) {
+    .h2-size {
+      font-size: 40px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .h2-size {
+      font-size: 56px;
+    }
+  }
+
+  .content-max {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .cta-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 14px 32px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: opacity 0.15s ease, transform 0.1s ease;
+    cursor: pointer;
+    letter-spacing: 0.02em;
+  }
+
+  .cta-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  .cta-btn:active {
+    transform: translateY(0);
+  }
+
+  .cta-gold {
+    background-color: #F5A623;
+    color: #0A1628;
+  }
+
+  .cta-navy {
+    background-color: #0A1628;
+    color: #FFFFFF;
+  }
+
+  .cta-white {
+    background-color: #FFFFFF;
+    color: #0A1628;
+  }
+}
